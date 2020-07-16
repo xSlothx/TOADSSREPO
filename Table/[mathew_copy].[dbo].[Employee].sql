@@ -16,6 +16,7 @@ CREATE TABLE [dbo].[Employee] (
 	[HireDate] date,
 	[Column_14] int,
 	[Column_15] int,
+	[Column_16] int,
 	CONSTRAINT [Employee_PK] PRIMARY KEY([EmployeeId]) WITH (FILLFACTOR=100) ON [PRIMARY],
 	CONSTRAINT [Employee_UK1] UNIQUE([FirstName], [LastName], [Phone]) WITH (FILLFACTOR=100) ON [PRIMARY],
 	CONSTRAINT [Employee_UK2] UNIQUE([SSN]) WITH (FILLFACTOR=100) ON [PRIMARY],
