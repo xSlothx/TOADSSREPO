@@ -14,6 +14,7 @@ CREATE TABLE [dbo].[Employee] (
 	[BirthDate] date NOT NULL,
 	[Gender] char(1) COLLATE SQL_Latin1_General_CP1_CI_AS,
 	[HireDate] date,
+	[Column_14] int,
 	CONSTRAINT [Employee_PK] PRIMARY KEY([EmployeeId]) WITH (FILLFACTOR=100) ON [PRIMARY],
 	CONSTRAINT [Employee_UK1] UNIQUE([FirstName], [LastName], [Phone]) WITH (FILLFACTOR=100) ON [PRIMARY],
 	CONSTRAINT [Employee_UK2] UNIQUE([SSN]) WITH (FILLFACTOR=100) ON [PRIMARY],
