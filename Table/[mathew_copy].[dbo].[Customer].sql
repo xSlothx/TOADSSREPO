@@ -12,6 +12,7 @@ CREATE TABLE [dbo].[Customer] (
 	[Zip] char(5) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
 	[BirthDate] date,
 	[Gender] char(1) COLLATE SQL_Latin1_General_CP1_CI_AS,
+	[Column_12] int,
 	CONSTRAINT [Customer_PK] PRIMARY KEY([CustomerId]) WITH (FILLFACTOR=100) ON [PRIMARY],
 	CONSTRAINT [Customer_UK] UNIQUE([FirstName], [LastName], [Phone]) WITH (FILLFACTOR=100) ON [PRIMARY],
 	CONSTRAINT [CK__Customer__Custom__25869641] CHECK (([CustomerId]>(0))),
