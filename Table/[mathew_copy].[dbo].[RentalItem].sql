@@ -6,9 +6,6 @@ CREATE TABLE [dbo].[RentalItem] (
 	[ItemNumber] int NOT NULL,
 	[MovieCopyId] int NOT NULL,
 	CONSTRAINT [RentalItem_PK] PRIMARY KEY([RentalId], [ItemNumber]) WITH (FILLFACTOR=100) ON [PRIMARY],
-	CONSTRAINT [RentalItem_FK1] FOREIGN KEY ([RentalId])
-		REFERENCES [dbo].[MovieRental] ([RentalId])
-	,
 	CONSTRAINT [RentalItem_FK2] FOREIGN KEY ([MovieCopyId])
 		REFERENCES [dbo].[MovieCopy] ([MovieCopyId])
 	,
